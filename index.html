@@ -360,11 +360,43 @@
     </div>
 
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop" data-modal>
     <div class="modal">
       <button class="btn" type="button" data-modal-close><svg width="18px" height="18px">
           <use href="./images/symbol-defs.svg#icon-close-black"></use>
         </svg></button>
+      <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <form class="modal-form">
+        <div class="modal-input"><label for="user-name">Имя</label>
+          <div class="input-field">
+            <input type="text" name="user-name" id="user-name">
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-name"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-input"><label for="user-tel">Телефон</label>
+          <div class="input-field">
+            <input type="let" name="user-tel" id="user-tel">
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-input"><label for="user-mail">Телефон</label>
+          <div class="input-field">
+            <input type="email" name="user-mail" id="user-mail">
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-input"><label for="user-name">Комментарий</label>
+          <div class="input-field">
+            <textarea name="textarea" id="textarea"></textarea>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
