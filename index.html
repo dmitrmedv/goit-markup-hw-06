@@ -360,9 +360,9 @@
     </div>
 
   </footer>
-  <div class="backdrop" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="btn" type="button" data-modal-close><svg width="18px" height="18px">
+      <button class="btn-close" type="button" data-modal-close><svg width="18px" height="18px">
           <use href="./images/symbol-defs.svg#icon-close-black"></use>
         </svg></button>
       <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
@@ -391,11 +391,13 @@
             </svg>
           </div>
         </div>
-        <div class="modal-input"><label for="user-name">Комментарий</label>
-          <div class="input-field">
-            <textarea name="textarea" id="textarea"></textarea>
-          </div>
+        <div class="modal-input"><label for="coment">Комментарий</label>
+          <div class="input-field"><textarea name="coment" id="coment" placeholder="Введите текст"></textarea></div>
         </div>
+        <div class="modal-checkbox"><input type="checkbox" name="checkbox" id="checkbox">
+          <label for="checkbox">Соглашаюсь с рассылкой и принимаю <span class="link">Условия договора</span></label>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
   </div>
