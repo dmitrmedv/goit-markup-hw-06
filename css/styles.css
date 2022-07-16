@@ -806,15 +806,39 @@ a {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-checkbox {
+.label {
   display: flex;
   margin-top: 20px;
-  justify-items: center;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+.modal-checkbox input {
+  appearance: none;
 }
 
 .modal-checkbox .link {
   color: var(--text-color-accent);
   text-decoration: underline;
   cursor: pointer;
+}
+
+.check-icon {
+  display: inline-block;
+  height: 15px;
+  width: 16px;
+  border: 2px solid var(--text-color-primary);
+  border-radius: 2px;
+  transition: var(--transition-animation);
+}
+
+.label input:checked + .check-icon {
+  background-image: url(../images/check.svg);
+  height: 15px;
+  width: 16px;
+  background-origin: border-box;
+  background-size: contain;
+  border-color: transparent;
+  background-repeat: no-repeat;
+  transition: var(--transition-animation);
 }
