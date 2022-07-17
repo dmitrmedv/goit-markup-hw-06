@@ -594,11 +594,8 @@ a {
 
 .footer .container {
   display: flex;
-}
-
-.social-network-block {
-  margin-top: 12px;
-  margin-left: 70px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .subscription-title {
@@ -635,11 +632,6 @@ a {
 .form {
   display: flex;
   margin-top: 20px;
-}
-
-.subscribe {
-  margin-left: auto;
-  margin-top: 12px;
 }
 
 .subscribe .icon {
