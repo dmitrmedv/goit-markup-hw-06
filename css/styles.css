@@ -11,7 +11,7 @@
   --header-border-color: #ececec;
   --border-color: #afb1b8;
   --footer-background-color-link: #44454e;
-  --transition-animation: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-animation: 220ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -37,7 +37,6 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 1px solid red; */
 }
 
 .icon {
@@ -82,11 +81,6 @@ a {
 .nav-list .link {
   color: var(--text-color-primary);
   position: relative;
-  /* outline: 1px solid red; */
-}
-
-.link.active {
-  color: var(--text-color-accent);
 }
 
 .link.active {
@@ -94,7 +88,6 @@ a {
 }
 
 .link.active::after {
-  display: block;
   content: "";
   height: 4px;
   width: 100%;
